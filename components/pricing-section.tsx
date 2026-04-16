@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button"
 const pricingTiers = [
   {
     name: "Assignment Writing",
-    price: "LKR 1,500",
-    unit: "per page",
+    price: "LKR 2.00",
+    unit: "per word",
     description: "Custom written assignments for any subject",
     features: [
       "100% original content",
@@ -19,8 +19,8 @@ const pricingTiers = [
   },
   {
     name: "Research Paper",
-    price: "LKR 2,500",
-    unit: "per page",
+    price: "LKR 2.5",
+    unit: "per word",
     description: "In-depth research with proper citations",
     features: [
       "Thorough research",

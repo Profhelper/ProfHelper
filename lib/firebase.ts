@@ -1,5 +1,5 @@
-import { initializeApp, getApps } from "firebase/app"
-import { getFirestore } from "firebase/firestore"
+import { initializeApp, getApps, getApp } from "firebase/app"
+import { getFirestore, connectFirestoreEmulator } from "firebase/firestore"
 
 const firebaseConfig = {
   apiKey: "AIzaSyDzVKdAWlRj3cFhz_qtMbYkAS6co-mE8mE",
@@ -12,7 +12,7 @@ const firebaseConfig = {
 }
 
 // Initialize Firebase only if it hasn't been initialized
-const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0]
+const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp()
 
 // Initialize Firestore
 export const db = getFirestore(app)
